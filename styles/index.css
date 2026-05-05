@@ -1,0 +1,131 @@
+:root {
+    --main-bg-color:#f5f5f5;
+    /*--shadow-bg-color: #0000008f;*/
+    --accent: #015F42;
+    /*--btn-color:#f5f5f5;*/
+    --btn-color:#cccccc;
+    --border-color: #d4d4d4;
+    --text-default: black;
+    --hover-button: #015F42;
+    --bg-color:#10a775;
+}
+
+*
+{
+    font-family: 'Segoe UI';
+}
+
+.topic 
+{
+    text-align: center;
+    margin-bottom: 30px; 
+}
+
+.topic h
+{
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.topic p
+{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-default);
+}
+
+.navigation
+{
+    height: 60%;
+}
+
+.element
+{
+    min-height: 40px;
+    max-height: 70px;
+    margin-top: 17px;
+}
+    
+button 
+{
+    color: var(--text-default);
+    background: var(--btn-color);
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 70%;
+    padding: 17px 100px;
+    margin-left: 15%;
+    border-radius: 0px;
+    transition: 0.2s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+    
+button:hover 
+{
+    background: var(--hover-button);
+    color:white;
+}
+option,select
+{
+    border:none;
+    border-radius: 5px;
+}   
+option
+{
+    cursor: pointer;
+}
+.index-container 
+{
+    margin: 50px;
+    position: absolute;
+    left:25%;
+    top:5%;
+    max-width: 1700px;
+    min-width: 500px;
+}
+
+.content 
+{
+    padding: 50px;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    background: var(--main-bg-color);
+}
+li
+{
+    margin-bottom: 5px;
+}
+
+li::marker
+{
+    font-size: 35px;
+    color: var(--accent);
+}
+
+li::before
+{
+    content: '';
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+@media (width < 800px)
+{
+    
+    .element
+    {
+        margin-top:35px;
+    }
+    .index-container
+    {
+        left:1px;
+    }
+
+}

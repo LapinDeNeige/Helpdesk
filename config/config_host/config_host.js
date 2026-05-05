@@ -1,0 +1,5 @@
+module.exports={
+    ip:'127.0.0.1',
+    port:8080,
+    timeout:1000,
+}

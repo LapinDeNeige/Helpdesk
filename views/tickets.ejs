@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/custom.css">
+    <link rel="shortcut icon" href="../sources/icon.png"/>
+    <title>Helpdesk</title>
+    <script src="../scripts/axios.min.js"></script>
+
+    <script src="../scripts/js-cookie.min.js"></script> 
+    <script src="../scripts/buttons-active.js"></script>
+
+    <script src="../scripts/tickets.js"></script>
+    <script src="../scripts/functions.js"></script>
+    <script src="../scripts/buttons.js"></script>
+    
+    <script src="../scripts/blink.js"></script>
+    <script src="../scripts/components.js"></script>
+
+    <script src="../scripts/auth.js"></script>
+  </head>
+  <body>
+      <div class="content content-tickets" id="content-id">
+        <header class="header">
+          <div class="topic">
+            <!--<span style="border-radius: 50%;width:40px;height: 40px;background-color: var(--accent);"> .</span> -->
+            <img id="logo" style="border-radius: 50%;background-color: var(--accent);" width="50" height="50"/> 
+            <!--<img id="logo" src="../sources/logo.png" width="50" height="50"/>  -->
+            <a href="/" class="topic-link"> 
+              Helpdesk
+              <p class="topic-desc">Tickets</p>
+            </a>
+
+            <div class="search-container">
+              <input type="search" class="input-search" id="input-search-id"  maxlength="20" required>
+              <button class="search-icon search-icon-tickets" id="search-id" onclick="searchData(document.getElementById('input-search-id'));">
+                <img src="../sources/search_icon.svg" width="18" height="18"  id="search-id"/>
+              </button>
+            </div>
+            <div class="notify-container" id="notify-container-id" onclick="showNotifications()" > 
+              <img src="../sources/notification_icon.svg" class="notify-icon" width="42" height="42"/>
+              <div class="notify" id="notify"></div>
+              <!------------------------------------>
+                <div class="notify-window" id="notify-window-id" onclick="event.stopPropagation();"> 
+                  <div class="close-btn close-btn-notify"  id="close-btn-notify" onclick="closeNotifyWindow()"></div> 
+                  <div class="header header-notify">
+                    <h1>Notifications</h1>  
+                  </div>
+                  <div id="notify-messages"> </div>
+                </div>  
+              <!------------------------------------>
+            </div>
+            <!--
+            -->
+          </div>
+          
+        </header>
+        <div class="information">
+          <!--------------------->
+          <main class="tickets" id="tickets-id">
+            <%if(status=='Error') {%>
+              <script>alert('Error loading tickets');</script>
+            <%}%>
+            <%if(status=='OK') {%>
+              <%if(data.length==0) {%>
+                <div class="tickets-empty"> No notifications</div>
+              <%}%> 
+              
+              <%for(let i=0;i<data.length;i++) {%>  
+            <div class="ticket-container">
+              <%if(data[i].notify_status==1){%>
+                <button class="unread-ticket" name="ticket"  id="ticket_<%=data[i].Id%>" onclick="connectTicket('<%= JSON.stringify(data[i])%>')">
+                  <div class="id-label">
+                    <span class="id-read">#<%=data[i].Id %></span>
+                    <span class="label-read"><%=data[i].FIO%></span>
+                  </div>
+                </button>  
+              
+              <% } else { %>
+              <button class="ticket" name="ticket" id="ticket_<%=data[i].Id%>" onclick="connectTicket('<%=JSON.stringify(data[i])%>')">
+                <div class="id-label">
+                  <span class="id">#<%=data[i].Id %></span>
+                  <span class="label"><%=data[i].FIO%></span>
+                </div>
+              </button>
+              <%}%>  
+              <button class="after-ticket">
+                  <%if(data[i].Status==0) {%>
+                    <div class="label-pending">
+                      <p>PENDING</p>
+                    </div>
+                  <%}%>
+                  <%if(data[i].Status==1) {%>
+                    <div class="label-proccess">
+                      <p>IN PROCESS</p>
+                    </div>
+                  <%}%>
+                  <%if(data[i].Status==2) {%>
+                    <div class="label-completed">
+                      <p>COMPLETED</p>
+                    </div>
+                  <%}%>
+                  
+              </button>
+              <!-----------------------
+              <div class="ticket-select-container">
+                <label for="ticket-select" class="ticket-select"></label>
+                <input type="checkbox" class="ticket-select" id="ticket-select" name="ticket-select" onclick="alert()"/>
+              </div>
+              
+              ----------------------->
+          </div>
+            <%}%>
+
+          <%}%>
+          </main>
+          <div class="version-contaier" id="version-container-id"> </div>
+          <!--------------------->
+          <aside class="filter">
+            <button id="all" onclick="updateTickets({type:'status','status':statusAll});">All</button>
+            <!--<button id="my">Мои заявки</button> -->
+            <button id="completed" onclick="updateTickets({type:'status','status':statusCompleted});">Completed</button>
+            <button id="pending" onclick="updateTickets({type:'status','status':statusPending});">Pending</button>
+            <button id="in-proceed" onclick="updateTickets({type:'status','status':statusProcess});">In process</button>
+            <button id="back" onclick="location.href='../index'">Back to menu</button>
+          </aside>
+
+        </div>
+        
+      </div>
+
+      <!--Modal window-->
+      <dialog class="tickets-dialog" id="tickets-dialog-id">
+        <div class="content-ticket-dialog">
+          <div>
+            <button class="close-btn"  id="close-btn-ticket" onclick="closeTicketsWindow()"></button>
+            <div class="header">
+              <h1 style="margin-left:20%"> Current application</h1>
+            </div>  
+          </div>
+            <div class="details">
+            <div class="row">
+              <p class="name-text">Phone</p>
+              <p class="value-text" id="phone"></p>
+            </div>
+            <div class="row">
+              <p class="name-text">Name</p>
+              <p class="value-text" id="FIO"></p>
+            </div>
+            <div class="row">
+              <p class="name-text">Email</p>
+              <p class="value-text" id="email"></p>
+            </div>
+            <div class="row">
+              <p class="name-text">Status</p>
+              <p class="value-text" id="status"></p>
+            </div>
+            <div class="row">
+              <p class="name-text">Application date</p>
+              <p class="value-text" id="date"></p>
+            </div>
+            <div class="row">
+              <p class="name-text">Problem</p>
+              <p class="value-text" id="problem"></p>
+            </div>
+            <div class="row-description">
+              <p class="name-text-description">Problem description</p>
+              <div class="value-text-description" id="description"></div>
+            </div>
+          </div>
+      </div>
+      </dialog>
+      <!--//-->
+      <!---->
+      <audio  id="notify-sound"  type="audio/mpeg"  hidden>
+        <source src="../sources/sound/notify.mp3" type="audio/mp3">
+      </audio> 
+      <!---->
+    
+    
+  </body>
+</html
