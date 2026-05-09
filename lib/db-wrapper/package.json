@@ -2,11 +2,8 @@
   "name": "db-wrapper",
   "version": "1.0.0",
   "description": "",
+  "private":true,
   "main": "db-wrapper.js",
-  "dependencies": {
-    "db": "^1.0.0",
-    "json-data": "^1.0.0"
-  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
