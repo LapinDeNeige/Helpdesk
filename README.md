@@ -48,8 +48,9 @@ A lightweight, feature-rich helpdesk system designed to streamline ticket manage
 # Installation
 Clone the repository:
 
-git clone https://github.com/LapinDeNeige/Helpdesk.git
-
+```
+git clone -b deprecated https://github.com/LapinDeNeige/Helpdesk.git
+```
 Install dependencies:
 ```bash
 npm install
