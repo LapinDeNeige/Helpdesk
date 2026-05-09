@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5"/>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/support.css">
+    <title>Helpdesk</title>
+
+    <script src="./scripts/result.js"></script>
+  </head>
+  <body>
+    <div class="support-container">
+      <% if(status=='OK') { %>
+            <div class="content" style="background-color: white;color:green;margin-top: 25%;">
+              <div class="status status-success">
+                <h1>Your application has been sent</h1>
+                <script>setTimeout(()=>{window.location.href="/support";},5000)   </script>
+              </div>
+            </div>
+            <div class="content-tooltip">
+              <div  class="btn-block">  
+                <button class =" button button-url" onclick="location.href='/support'">New application</button>
+                <button class ="button button-url" onclick="location.href='/tickets'">View applications</button>
+              </div>
+            </div>
+          <% } %>
+          <% if(status== 'MsgError') { %>
+
+            <script src="./scripts/support.js"></script>
+            <div class="content" id="content">
+              <form id="statement" method="post" action="/">
+                <img id="logo" style="border-radius:100%;background-color: var(--accent);" width="50" height="50">
+                <div class="topic">
+                  <div class="topic-text">Helpdesk</div>
+                  <span>Input form</span>
+                </div>
+                  <%if(errors.includes('name')) {%>
+                    <fieldset class="input-box input-error">
+                        <legend>Name</legend>
+                        <input type="text" id="name" name="name" class="input-error" placeholder="John smith" maxlength="150" required />
+                        <label id ="errorName" class="error-text">Username is invalid</label>  
+                    </fieldset>
+                  <%} else {%>
+                    <fieldset class="input-box ">
+                      <legend>Name</legend>
+                      <input type="text" id="name" name="name" placeholder="John smith" maxlength="150" required />
+                      
+                    </fieldset>
+                  <%}%>
+                  <%if(errors.includes('email')) {%>
+                    <fieldset class="input-box input-error">
+                      <legend>Email </legend>
+                      <input type="text" id="email" class="input-error" name="email" placeholder="IvanovaII@rcsur.ru" maxlength="150" required />
+                      <label id ="errorEmail" class="error-text">Email is invalid. Email should be of mail.com </label>
+                    </fieldset>    
+                  </br>
+                  <%} else {%>
+                    <fieldset class="input-box">
+                      <legend>Email </legend>
+                      <input type="text" id="email"  name="email" placeholder="IvanovaII@rcsur.ru" maxlength="150" required />
+                    </fieldset>
+                  <%}%>
+                  <%if(errors.includes('phone')) {%>
+                    <fieldset class="input-box input-error">
+                      <legend>Additional phone number</legend>
+                      <input type="number" id="phone" class="error-text" name="phone" placeholder="100" min="0" max="999" required />
+                      <label id ="errorPhone" class="error-text">Additional phone number</label>
+                    </fieldset>
+                  <%} else {%>
+                    <fieldset class="input-box">
+                      <legend>Additional phone number</legend>
+                      <input type="number" id="phone"  name="phone" placeholder="100" min="0" max="999" required />
+                    </fieldset>
+
+                  <%}%>
+                </br>
+                <!--
+                <div id="news" class="news">
+                  <img id="icon" src="../sources/icon.png" width="30" height="30" style="margin-top:0px;margin-left:0px;">
+                  ВНИМАНИЕ! КАРТРИДЖИ И НОУТБУКИ ВЫДАЁТ Т.В. БЕЛЯКОВА! 
+                </div>
+                -->
+                <%if(errors.includes('problem')) {%>
+                <select class="dropdown input-error" id="problems" name="problem">
+                  <option value="other">CHOOSE AN ISSUE FROM LIST</option>
+                  <option value="other">CHOOSE YOUR ISSUE FROM LIST</option>
+                  <option value="not-access-folder" name="not-access-folder">Problem with access to shared folder</option>
+                  <option value="not-access-network" name="not-access-network">Issue with internet</option>
+                  <option value="not-access-cartridge" name="not-access-cartridge">Change cartridge</option>
+                  <option value="not-access-phone" name="not-access-phone">Phone issue</option>
+                  <option value="not-access-programm" name="not-access-programm">App issue</option>
+                  <option value="not-access-printer" name="not-access-printer">Printer issue</option>
+                  <option value="other-problem" name="other-problem">Other</option>
+                  
+                </select>
+                <label id="errorProblem" class="error-text">Выберите проблему</label>
+                  <%} else {%>
+                  <select class="dropdown" id="problems" name="problem">
+                    <option value="other">CHOOSE AN ISSUE FROM LIST</option>
+                    <option value="not-access-folder" name="not-access-folder">Problem with access to shared folder</option>
+                    <option value="not-access-network" name="not-access-network">Issue with internet</option>
+                    <option value="not-access-cartridge" name="not-access-cartridge">Change cartridge</option>
+                    <option value="not-access-phone" name="not-access-phone">Phone issue</option>
+                    <option value="not-access-programm" name="not-access-programm">App issue</option>
+                    <option value="not-access-printer" name="not-access-printer">Printer issue</option>
+                    <option value="other-problem" name="other-problem">Other</option>
+                  
+                  </select>
+                  <%}%>
+                  
+                  <%if(errors.includes('upload')) {%>
+                  <%}%>
+                
+
+                  <%if(errors.includes('description')) {%>
+                    <fieldset class="input-box message-box input-error" id="desc-area">
+                      <legend>Problem description</legend>
+                      <textarea id="description" class="input-error" name="description" placeholder="My problem" maxlength="350" ></textarea> 
+                      <label id ="errorDescription" class="error-text">Problem description is invalid</label> 
+                    </fieldset>
+                    
+                    <%} else {%>
+                      <fieldset class="input-box message-box" id="desc-area">
+                        <legend>Problem description</legend>
+                        <textarea id="description" name="description" placeholder="My problem" maxlength="350" ></textarea> 
+                      </fieldset>
+                    <%}%>
+                <div class="btn-block">
+                  <button class="button-url" id="btn-send">Send</button>
+                  <button class ="button-url" onclick="location.href='index'" id="btn-back">Back to menu</button>
+                </div>
+              </form>
+          </div>
+        
+          <% } %>
+          <%if(status=='DBError') { %>
+            <script>alert('Server error')</script>
+            <div class="content" style="background-color: pink;color:red;">
+              <div class="status  status-error"><h1>Server error occured </h1></div>
+            </div>
+          <%}%>
+
+      
+    </div>
+</body>
+  </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5"/>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/support.css">
+    <link rel="shortcut icon" href="/logo.png"/>
+    <title>MCRSO: Техническая поддержка</title>
+
+    <script src="./scripts/result.js"></script>
+  </head>
+  <body>
+    <div class="support-container">
+        <% if(status=='OK') { %>
+            <div class="content" style="background-color: white;color:green;">
+                <div class="status status-success">
+                <h1>Пользователь успешно зарегистрирован</h1>
+                <script>setTimeout(()=>{window.location.href="/registration";},5000)   </script>
+                </div>
+            </div>
+            <div class="content-tooltip">
+                <div  class="btn-block">  
+                <button class =" button button-url" onclick="location.href='/registration'">Регистрация нового пользователя</button>
+                <button class ="button button-url" onclick="location.href='/moderator'">Посмотреть заявки</button>
+                </div>
+            </div>
+        
+        <%} else {%>
+            <div class="content" style="background-color: white;color:green;">
+                <div class="status status-error">
+                <h1>Ошибка регистрации пользователя</h1>
+                <script>setTimeout(()=>{window.location.href="/registration";},5000)   </script>
+                </div>
+            </div>
+            <div class="content-tooltip">
+                <div  class="btn-block">  
+                <button class =" button button-url" onclick="location.href='/registration'">Регистрация нового пользователя</button>
+                <button class ="button button-url" onclick="location.href='/moderator'">Посмотреть заявки</button>
+                </div>
+            </div>
+        <% }%>
+    </div>
+  </body>
+  </html>

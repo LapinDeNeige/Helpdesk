@@ -1,0 +1,33 @@
+{
+  "name": "Helpdesk",
+  "version": "1.2.4",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "crypto": "^1.0.1",
+    "date": "file:lib/date",
+    "db": "file:lib/db",
+    "db-wrapper": "file:lib/db-wrapper",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-session": "^1.18.2",
+    "json-data": "file:lib/json-data",
+    "knex": "^3.2.9",
+    "log": "file:lib/log",
+    "mariadb": "^3.4.0",
+    "multer": "^2.0.1",
+    "mysql2": "^3.22.3",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "transliterate": "^1.0.1",
+    "validation": "file:lib/validation",
+    "validator": "^13.12.0"
+  }
+}
