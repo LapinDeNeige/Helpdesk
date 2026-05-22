@@ -66,8 +66,22 @@ Run the application:
 
 ```bash
 node app.js
-```
 
+```
+# Docker installation
+Clone the repository:
+```
+git clone -b deprecated https://github.com/LapinDeNeige/Helpdesk.git
+```
+Run
+```bash
+docker-compose up -d 
+```
+To stop project
+
+```bash
+docker compose down
+```
 
 # Usage
 * Users can submit tickets through the client interface.
