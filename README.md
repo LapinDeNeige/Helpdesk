@@ -3,9 +3,9 @@ A lightweight, feature-rich helpdesk system designed to streamline ticket manage
 
 # Features
 
-~~Mailing Client After Sending Ticket~~ 
-~~Automatically sends email notifications to clients once their ticket is submitted, ensuring prompt communication and acknowledgment.~~ 
-~~File Uploading~~ 
+* ~~Mailing Client After Sending Ticket~~ 
+* ~~Automatically sends email notifications to clients once their ticket is submitted, ensuring prompt communication and acknowledgment.~~ 
+* ~~File Uploading~~ 
 * Notifications
 * Keep users updated with real-time notifications for ticket updates, comments, and status changes.
 * Admin Panel
@@ -29,7 +29,7 @@ A lightweight, feature-rich helpdesk system designed to streamline ticket manage
 * ``` GET  /searchTickets ``` - Search tickets by value
 * ``` GET  /version ``` - Get current version of Helpdesk
 * ``` GET  /updateStatus ``` - Update ticket's status
-~~POST ```/upload  - Upload``` file to server ~~
+* ~~```POST  /upload  - Upload``` file to server~~
 * ``` GET  /statProblem ``` - Getting problem's stats 
 * ``` GET  /stat ``` - Getting stat
 * ``` GET  /moderator ``` - Moderator page
@@ -86,8 +86,8 @@ docker compose down
 # Usage
 * Users can submit tickets through the client interface.
 * Administrators manage and track tickets through the admin panel.
-~~Status updates and notifications are automatically sent to the relevant users.~~
-~~Files can be uploaded and attached to tickets for context.~~
+* ~~Status updates and notifications are automatically sent to the relevant users.~~
+* ~~Files can be uploaded and attached to tickets for context.~~
 
 # Contributing
 
