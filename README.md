@@ -2,9 +2,9 @@
 A lightweight, feature-rich helpdesk system designed to streamline ticket management, enhance communication, and improve support workflow.
 
 # Features
-~~Mailing Client After Sending Ticket ~~ Deprecated
-~~Automatically sends email notifications to clients once their ticket is submitted, ensuring prompt communication and acknowledgment.~~ Deprecated
-~~File Uploading~~ Deprecated
+~~Mailing Client After Sending Ticket ~~ 
+~~Automatically sends email notifications to clients once their ticket is submitted, ensuring prompt communication and acknowledgment.~~ 
+~~File Uploading~~ 
 * Notifications
 * Keep users updated with real-time notifications for ticket updates, comments, and status changes.
 * Admin Panel
@@ -28,7 +28,7 @@ A lightweight, feature-rich helpdesk system designed to streamline ticket manage
 * ``` GET  /searchTickets ``` - Search tickets by value
 * ``` GET  /version ``` - Get current version of Helpdesk
 * ``` GET  /updateStatus ``` - Update ticket's status
-~~* ``` POST /upload ``` - Upload file to server ~~
+~~POST ```/upload  - Upload``` file to server ~~
 * ``` GET  /statProblem ``` - Getting problem's stats 
 * ``` GET  /stat ``` - Getting stat
 * ``` GET  /moderator ``` - Moderator page
