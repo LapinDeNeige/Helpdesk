@@ -85,7 +85,7 @@
   height: 680px;
 }
 
-.content ,.info-ticket 
+.content ,.info-ticket ,.not-found-content
 {
   position: absolute;
   top:9%; 
@@ -762,7 +762,14 @@ input[type="checkbox"]
   font-size: 14px;
   color:var(--text-version);
 }
-
+.not-found
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  margin-left: 25%;
+  color:var(--accent);
+  margin-top:85px;
+}
 @keyframes load
 {
   from {
@@ -779,10 +786,19 @@ input[type="checkbox"]
   {
     left:1%;
   }  
+  .not-found-content
+  {
+    margin-left: -35%;
+  }
 }
 
 @media (width < 900px) 
 {
+  .not-found-content
+  {
+    left: 1%;
+    width: 100%
+  }
   .select-remove-container
   {
     left:25%;

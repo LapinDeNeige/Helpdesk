@@ -332,7 +332,7 @@ legend
   .support-container
   {
     left:15%;
-    width:100%;
+    /*width:100%;*/
   }
 }
 
@@ -343,7 +343,6 @@ legend
     display: block;
     left: 1%;
     width:99%;
-    height: 100%;
   }
   .button-back
   {

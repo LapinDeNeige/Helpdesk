@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="/logo.png"/>
     <title>Helpdesk</title>
     <script src="./scripts/login.js"></script>
+    <script src="./scripts/axios.min.js"></script>
   </head>
   <body>
     
@@ -28,9 +29,6 @@
               <p>Password: <span style="color:red">test </span></p>
             </div>
           </details>
-          <!--<div class="topic-login">AUTHORIZATION</div> -->
-          
-          <!-- -->
           
           <fieldset class="input-box"> 
             <legend>Login</legend>
@@ -45,7 +43,11 @@
           <div class="btn-block"> 
             <input type="submit" class="button-url" id="button-submit" value="LOGIN"/> 
             <button class ="button-url" onclick="location.href='index'" id="btn-back">Back to menu</button> 
-            
+
+            <%if(isFirstTime=='true') { %>
+              <button class ="button-url" onclick="location.href='registration'" >Register user</button> 
+            <%}%>
+
           </div> 
         </form>
 

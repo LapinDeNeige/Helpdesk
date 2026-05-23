@@ -54,13 +54,34 @@ passport.deserializeUser((id, done) => {
 	done(null, user);
 });
 
-function isAuthenticated(request, response, next) {
+async function isAuthenticated(request, response, next) {
+  const result = await db_wrapper.getUserCount();
+  const userCount = parseInt(result.count,"10");
+
+  if(userCount == 0)
+  {
+    return next();
+  }
+
 	if (request.isAuthenticated()) {
 		return next();
 	}
   response.redirect('/login');
 }
+//
+/*
+async function checkFirstTime()
+{
+  const result = await db_wrapper.getUserCount();
+  const userCount = parseInt(result.count,"10");
 
+  if(userCount == 0)
+  {
+    return next();
+  }
+}
+*/
+//
 app.use(express.urlencoded({ extended: true }));
 
 app.use(session(
@@ -79,7 +100,17 @@ app.use(passport.session());
 
 
 app.get('/login', (request, response) => {
-  response.render('login',{error:request.query.error});
+
+    db_wrapper.getUserCount().then((result)=>{
+      const userCount = parseInt(result.count,"10");
+      
+      if(userCount == 0)
+        response.render('login',{error:request.query.error,isFirstTime:'true'});
+      else
+        response.render('login',{error:request.query.error,isFirstTime:'false'});
+    });
+
+  
 });
 
 app.post('/login',
@@ -224,7 +255,6 @@ app.get('/tickets', (request, response) => {
     });
   });
 
-  ///
   app.get('/statProblem',isAuthenticated,(request,response)=>{
     let problem=request.query.problem;
     db_wrapper.getStatisticProblem(problem).then((result)=>{
@@ -255,9 +285,9 @@ app.get('/tickets', (request, response) => {
     let params=request.body.params;
     db_wrapper.updateStatus(params).then((result)=>{
       if(!result)
-        response.json({'status':'UpdateStatError','result':'Ошибка обновления статуса'});
+        response.json({'status':'UpdateStatError','result':'Error updating status'});
       else
-        response.json({'status':'OK','result':'Данные успешно отправлены'});
+        response.json({'status':'OK','result':'Data successfully sent'});
     });
   });
 
@@ -271,8 +301,14 @@ app.get('/tickets', (request, response) => {
     response.render(`test`);
   });
   */
-///////////////////////////////////////////////////  
-
+  /*
+  app.get('/tmp',(request,response) => {
+    
+    response.render('registerResult',{'status':'OK'});
+  });
+  */
+  ////
+  ///////////////////////////////////////////////////
   app.get('*',(request,response)=>{
     response.render('not_found');
   });
