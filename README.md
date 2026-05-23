@@ -2,20 +2,19 @@
 A lightweight, feature-rich helpdesk system designed to streamline ticket management, enhance communication, and improve support workflow.
 
 # Features
-* Mailing Client After Sending Ticket
-* Automatically sends email notifications to clients once their ticket is submitted, ensuring prompt communication and acknowledgment.
+~~Mailing Client After Sending Ticket ~~ Deprecated
+~~Automatically sends email notifications to clients once their ticket is submitted, ensuring prompt communication and acknowledgment.~~ Deprecated
+~~File Uploading~~ Deprecated
 * Notifications
 * Keep users updated with real-time notifications for ticket updates, comments, and status changes.
 * Admin Panel
-* A centralized dashboard for administrators to manage tickets, users, and system settings with ease.
+* A centralized dashboard for administrators to manage tickets
 * Status Coloring
 * Tickets are visually categorized using color-coded statuses for quick identification and prioritization.
 * Status Changing
 * Admins and support agents can update ticket statuses (e.g., Open, In Progress, Resolved), triggering 	notifications and workflow updates.
 * Notifications Read
 * Track which notifications have been read to ensure no update or important information is missed.
-* File Uploading
-* Users can attach files to tickets, facilitating better communication and easier problem resolution.
 * Logging important actions and errors to a file for auditing and debugging.
 * Reading database and server port and IP from configuration file
 * Problem Statistics Generate statistics on problems types to identify trends and optimize support.
@@ -29,7 +28,7 @@ A lightweight, feature-rich helpdesk system designed to streamline ticket manage
 * ``` GET  /searchTickets ``` - Search tickets by value
 * ``` GET  /version ``` - Get current version of Helpdesk
 * ``` GET  /updateStatus ``` - Update ticket's status
-* ``` POST /upload ``` - Upload file to server
+~~* ``` POST /upload ``` - Upload file to server ~~
 * ``` GET  /statProblem ``` - Getting problem's stats 
 * ``` GET  /stat ``` - Getting stat
 * ``` GET  /moderator ``` - Moderator page
