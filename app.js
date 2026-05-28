@@ -1,5 +1,4 @@
 const express = require('express');
-const host=require('./config/config_host/config_host.js');
 const validation=require('validation');
 const crypto = require('crypto');
 
@@ -17,7 +16,9 @@ const passport = require('passport');
 const localAuth = require('passport-local').Strategy;
 const session = require('express-session');
 
-
+//
+require('dotenv').config();
+//
 const urlEncoded=bodyParser.urlencoded({extended:true});
 
 const app = express();
@@ -295,29 +296,21 @@ app.get('/tickets', (request, response) => {
   app.get('/version',(request,response)=>{
    response.json({'currentVersion':jsonFile.version}); 
   });
-  ////////////////////////////////////////////////////
-  /*
-  app.get('/test',(request,response)=>{
-    response.render(`test`);
-  });
-  */
-  /*
-  app.get('/tmp',(request,response) => {
-    
-    response.render('registerResult',{'status':'OK'});
-  });
-  */
-  ////
-  ///////////////////////////////////////////////////
+  
   app.get('*',(request,response)=>{
     response.render('not_found');
   });
   
-
+  /*
   app.listen(host.port,host.ip,host.timeout, () => { 
     console.log(`Starting server on ${host.ip}:${host.port}`); 
   });
-  
+  */
+  //
+  app.listen(process.env.PORT,process.env.IP,()=>{
+    console.log(`Listening on ${process.env.IP}:${process.env.PORT}`);
+  });
+  //
   app.post('/removeTicket',isAuthenticated,(request,response)=>{
           let retStatus='OK';
 
