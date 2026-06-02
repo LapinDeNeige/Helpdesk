@@ -1,8 +1,8 @@
 module.exports={
-    host:"db",
+    host:"localhost",
     user:"root",
-    password:"QHF6nDVMRWyG",
+    password:"12345",
     port:"3306",
-    db_name:"ticketsdb",
+    db_name:"ticketsdb_1",
     aquireTimeout:2000
 }

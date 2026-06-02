@@ -69,20 +69,7 @@ async function isAuthenticated(request, response, next) {
 	}
   response.redirect('/login');
 }
-//
-/*
-async function checkFirstTime()
-{
-  const result = await db_wrapper.getUserCount();
-  const userCount = parseInt(result.count,"10");
 
-  if(userCount == 0)
-  {
-    return next();
-  }
-}
-*/
-//
 app.use(express.urlencoded({ extended: true }));
 
 app.use(session(
@@ -266,19 +253,6 @@ app.get('/tickets', (request, response) => {
     })    
 
   });
-  /*
-  app.post('/upload',(request,response)=>{
-    let ticketId=request.body.ticketId;
-    
-    db_wrapper.getUploadData({'ticketId':ticketId}).then((result)=>{
-        if(!result)
-          response.json({'status':'GetUploadError','result':'Ошибка получения файла'});
-        else
-          response.json({'status':'OK','result':result})
-    });
-  });
-  */
-
   app.post('/updateStatus',(request,response)=>{
     if(!request.body)
       response.sendError(400);
@@ -393,23 +367,4 @@ app.get('/tickets', (request, response) => {
     }
       
   } ); 
-
-
-/*
-function sendEmail(mailTo,message,subject)
-{
-    try
-    {
-      const mail=new mailer();
-      mail.sendMail(mailTo,message,subject);
-      logger.log(`Успешно отправил почту `);
-    }
-    catch(err)
-    {
-      logger.log(`Ошибка отправки почты ${err}`);
-      throw new SyntaxError('Mail error'); //mail problems
-    }
-    
-}
-*/
 ///////////////////////////////////////////////////
