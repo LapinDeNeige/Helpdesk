@@ -281,8 +281,8 @@ app.get('/tickets', (request, response) => {
   });
   */
   //
-  app.listen(process.env.PORT,process.env.IP,()=>{
-    console.log(`Listening on ${process.env.IP}:${process.env.PORT}`);
+  app.listen(process.env.PORT,process.env.HOST,()=>{
+    console.log(`Listening on ${process.env.HOST}:${process.env.PORT}`);
   });
   //
   app.post('/removeTicket',isAuthenticated,(request,response)=>{
