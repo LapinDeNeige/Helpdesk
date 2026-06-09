@@ -15,7 +15,6 @@ A lightweight, feature-rich helpdesk system designed to streamline ticket manage
 * Status Changing
 * Admins and support agents can update ticket statuses (e.g., Open, In Progress, Resolved), triggering 	notifications and workflow updates.
 * Notifications Read
-* Reading from log file
 * Track which notifications have been read to ensure no update or important information is missed.
 * Logging important actions and errors to a file for auditing and debugging.
 * Reading database and server port and IP from configuration file
@@ -40,7 +39,6 @@ A lightweight, feature-rich helpdesk system designed to streamline ticket manage
 * ``` POST /delNotify ``` - Delete notifications   
 * ``` GET /isAuth ``` - Get user's auth status (if user authenticated)
 * ``` GET /tickets ``` - Get tickets page 
-* ``` GET /log ``` - Get logs messages 
 * ``` GET /support ``` - Get support form page 	
 * ``` GET /registration ``` - Get registration page
 * ``` POST /registration ``` - Sign up new user

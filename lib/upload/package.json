@@ -1,17 +1,14 @@
 {
-  "name": "db",
+  "name": "upload",
   "version": "1.0.0",
   "description": "",
-  "main": "db.js",
-  "private":true,
+  "main": "upload.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "date": "file:../date",
-    "log": "file:../log",
-    "dotenv": "^17.4.2"
+    "multer": "^2.0.1"
   }
 }

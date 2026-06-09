@@ -23,14 +23,6 @@
         descarea.style.display = 'none';
         manual.style.display = 'block';
         manualText.style.display = 'block';
-        /*
-        createManual('1.', 'В поле Ф.И.О указать получателя пропуска');
-        createManual('2.', 'Забирать при получении уведомления на указанную почту о выполненнии');
-        createManual('3.', 'Пойти за пропуском в 301 кабинет');
-
-        */
-        //desc.textContent = 'Создание пропуска на ' + name.value;
-
         removeUploadOption();
       break;
 
@@ -39,15 +31,9 @@
         descarea.style.display = 'none';
         manual.style.display = 'block';
         manualText.style.display = 'block';
-        //createFileDoc('1. ', 'СКАЧАТЬ ДОВЕРЕННОСТЬ', '/doverennost');
-        createManual('1. ', 'Заполнить доверенность');
-        createManual('2. ', 'Подписать у директора');
-        createManual('3. ', 'Принести подписанную доверенностьв кабинет 302');
-        createManual('4. ', 'Дождаться сообщения от казначейства о завершённой проверке специалистом казначейства');
-        createManual('5. ', 'Отвезти пакет документов по адресу:Проспект Ленина 48');
-        createManual('6 ', 'Дождаться сообщения о готовонсти подписи и снова отправиться в казначейство');
-        //createManual('7 ', 'После получения сертификата на ЭЦП сообщить в 302 кабинет');
-        
+        createManual('1. ', 'Fill the PoA');
+        createManual('2. ', 'Get chiefs sign');
+        createManual('3. ', 'Upload sign document');
         ///
         addUploadOption();
         createUploadFile();
@@ -60,11 +46,11 @@
         descarea.style.display = 'none';
         manual.style.display = 'block';
         manualText.style.display = 'none';
-        createManual('', 'Чтобы получить табель учёта времени необходимо позвонить по добавочному номеру 130 Дмитрию Анатольевичу. Если этого не будет сделано, то заявка не будет выполнена')
-        desc.textContent = 'Запрос табеля учёта времени для ' + name.value;
+        createManual('1', 'Get report card one');
+        createManual('2', 'Get report card two');
+        desc.textContent = 'Report card for ' + name.value;
 
         removeUploadOption();
-        
       break;
 
       default:
@@ -179,7 +165,7 @@ function createManual(title, description)
   {
     let uploadLabelText=document.createElement('label');
     uploadLabelText.className='label-text';
-    uploadLabelText.innerText='Загрузить файл доверенности в формате docx ';
+    uploadLabelText.innerText='Upload PoA in docx format ';
 
     return uploadLabelText;
   }
@@ -187,7 +173,7 @@ function createManual(title, description)
   function createUploadSuccessMsg(msg)
   {
      let successMsg=document.createElement('upload-container');
-     successMsg.innerText='Файл загружен';
+     successMsg.innerText='File uploaded';
      return successMsg;
   }
   function getManual()

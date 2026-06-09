@@ -8,10 +8,11 @@ module.exports = {
   development: {
     client: 'mysql2',
     connection: {
-      host:'127.0.0.1',
-      user:'USER',
-      password:'PASSWORD',
-      database:'tmp'
+      host:'db',
+      port:3306,
+      user:'user',
+      password:'QHF6nDVMRWyG',
+      database:'ticketsdb'
     },
     migrations: {
       directory:'./migrations'

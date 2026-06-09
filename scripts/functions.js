@@ -64,34 +64,33 @@ async function getData(param)
     console.log(`Error with internet ${err}`);
   }
 }
-///
-/*
+
+///////
 async function getUpload(ticketId) 
 {
   try
   {
-    const response=await axios.post('/upload',{'ticketId':ticketId});
+    const response=await axios.post('/getUpload',{'ticketId':ticketId});
     if(response.data.status=='OK')
     {
       const uploadPath=response.data.result.Path;
-      console.log('data upload loaded ok');
-
+      console.log('Data uploaded successfully');
       return uploadPath;
     }
     else
     {
-      console.log('data upload loaded error');
+      console.log('Data uploading error');
       return false;
     }
 }
   catch(err)
   {
-    console.log(`, ${err}`);
+    console.log(`Error uploading file ${err}`);
     return false;
   }
 
 }
-*/
+///////
 
 function defineTicketStatus(Status)
 {
@@ -201,10 +200,9 @@ function fillingTicket(data)
   data.Date==null?date.innerText='':date.innerText=convertDate(data.Date);;
 
   description.innerText='';
-  /*
+  ////////
   if(data.Problem=='create-e-signature')
   { 
-      
       getUpload(data.Id).then((result)=>
       {
         const uploadLink=createUploadLink(result);
@@ -220,8 +218,7 @@ function fillingTicket(data)
   }
   else
     description.innerText = data.Description;
-    */
-
+  ////////
   description.innerText = data.Description;
 
   if(data.Status == statusProcess)
@@ -243,51 +240,7 @@ function openTicketsWindow()
   ticketWindow.showModal();
 }
 
-function closeNotifyWindow(event)
-{
-  let notifyWindow=getNotifyWindow();
-  notifyWindow.style.display='none';
-  
-}
 
-function openNotifyWindow()
-{
-  let notifyWindow=getNotifyWindow();
-  notifyWindow.style.display='block';
-}
-async function showNotifications()
-{
-  removeNotifyMessage();
-  try
-  {
-    const response=await axios.get('/getNotify');
-    if(response.data.status=='ReadAllNotifyError')
-      alert('Error reading notifications');
-    else if(response.data.status == 'OK')
-    {
-      const notifyMessageCnt=response.data.message.length;
-      if(notifyMessageCnt==0)
-        createNotifyMessageEmpty();
-      else
-      {
-        for(i=0;i<notifyMessageCnt;i++)
-          createNotifyMessage(response.data.message[i]);
-        
-      }
-      openNotifyWindow();
-    }
-    else
-    {
-      alert('Error loading notifications');
-    }
-    
-  }
-  catch(err)
-  { 
-    alert('Error loading notifications');
-    console.log(err);
-  }
-}
 
 function searchData(data)
 {
@@ -610,6 +563,7 @@ async function removeTicket(ticketId)
   }
 }
 
+
 function shakeBellRight(bell)
 {
   bell.style.transform='rotate(10deg)';
@@ -632,12 +586,18 @@ function shakeBell()
   setTimeout(()=>{shakeBellStraight(bell);},250);
 }
 
-///////////////////////////
 async function getVersion()
 {
-  const  result =await  axios.get('/version');
-  const currentVersion = result.data.currentVersion;
-  return currentVersion;
+  try
+  {
+    const  result =await  axios.get('/version');
+    const currentVersion = result.data.currentVersion;
+    return currentVersion;
+  }
+  catch(err)
+  {
+    console.log(`Error getting version ${err}`);   
+  }
 }
 function createVersion()
 {

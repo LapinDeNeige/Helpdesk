@@ -16,9 +16,12 @@ const passport = require('passport');
 const localAuth = require('passport-local').Strategy;
 const session = require('express-session');
 
-//
+const upload=require('upload');
+///
+const logFile=require('./config/config_log/config_log.js');
+///
 require('dotenv').config();
-//
+
 const urlEncoded=bodyParser.urlencoded({extended:true});
 
 const app = express();
@@ -28,6 +31,8 @@ const logger=new Log();
 const db_wrapper=new wrapper();
 const jsonData=new jData();
 
+const uploadConfig=new upload();
+//const mail=new mailer();
 
 app.use(express.json());
 app.set('view engine', 'ejs');
@@ -69,20 +74,7 @@ async function isAuthenticated(request, response, next) {
 	}
   response.redirect('/login');
 }
-//
-/*
-async function checkFirstTime()
-{
-  const result = await db_wrapper.getUserCount();
-  const userCount = parseInt(result.count,"10");
 
-  if(userCount == 0)
-  {
-    return next();
-  }
-}
-*/
-//
 app.use(express.urlencoded({ extended: true }));
 
 app.use(session(
@@ -120,6 +112,8 @@ app.post('/login',
 );
 
 app.get('/logout', (request, response) => {
+  logger.log('User logout');
+  console.log('User logout');
 	request.logout((err) => {
 		response.redirect('/login');
 	});
@@ -266,19 +260,28 @@ app.get('/tickets', (request, response) => {
     })    
 
   });
-  /*
+  /////
   app.post('/upload',(request,response)=>{
     let ticketId=request.body.ticketId;
     
-    db_wrapper.getUploadData({'ticketId':ticketId}).then((result)=>{
+    db_wrapper.uploadFile({'ticketId':ticketId}).then((result)=>{
         if(!result)
           response.json({'status':'GetUploadError','result':'Ошибка получения файла'});
         else
           response.json({'status':'OK','result':result})
     });
   });
-  */
-
+  app.post('/getUpload',(request,response)=>{
+    let ticketId=request.body.ticketId;
+    
+    db_wrapper.getUploadFile({'ticketId':ticketId}).then((result)=>{
+        if(!result)
+          response.json({'status':'GetUploadError','result':'Ошибка получения файла'});
+        else
+          response.json({'status':'OK','result':result[0]})
+    });
+  });
+  
   app.post('/updateStatus',(request,response)=>{
     if(!request.body)
       response.sendError(400);
@@ -296,19 +299,27 @@ app.get('/tickets', (request, response) => {
   app.get('/version',(request,response)=>{
    response.json({'currentVersion':jsonFile.version}); 
   });
-  
+
+  ///
+  app.get('/log',isAuthenticated,(request,response)=>{
+
+      logger.readLog().then((result)=>{
+        response.json({'result':'OK','data':result});
+      }).catch((err)=>{
+        response.json({'result':'Err','message':err})
+      })
+    
+
+  });
+  ///
+
   app.get('*',(request,response)=>{
     response.render('not_found');
   });
   
-  /*
-  app.listen(host.port,host.ip,host.timeout, () => { 
-    console.log(`Starting server on ${host.ip}:${host.port}`); 
-  });
-  */
   //
-  app.listen(process.env.PORT,process.env.IP,()=>{
-    console.log(`Listening on ${process.env.IP}:${process.env.PORT}`);
+  app.listen(process.env.PORT,process.env.HOST,()=>{
+    console.log(`Listening on ${process.env.HOST}:${process.env.PORT}`);
   });
   //
   app.post('/removeTicket',isAuthenticated,(request,response)=>{
@@ -327,11 +338,11 @@ app.get('/tickets', (request, response) => {
           response.json({'status':retStatus});
         });  
   
-  app.post('/',urlEncoded,(request, response)=>  
+  app.post('/',urlEncoded,uploadConfig.uploadFile().single('upload'),(request, response)=>  
   {
     if(!request.body)
       response.sendError('400');
-
+   
     let name=request.body.name;
     let email=request.body.email;
     let phone=request.body.phone;
@@ -340,8 +351,7 @@ app.get('/tickets', (request, response) => {
     
     let descValidationResult=null;
     let uploadValidationResult=null;
-    
-
+      
     const nameValidationResult=validate.validateMessage(name);
     const emailValidationResult=validate.validateEmail(email);
     const phoneValidationResult=validate.validateMessage(phone);
@@ -371,6 +381,7 @@ app.get('/tickets', (request, response) => {
         errorMessage.push('upload');
       
       logger.log(`Error sending application`);
+      console.log(`Error sending application`);
       response.render('result',{status:'MsgError',errors:errorMessage});  
     }
     else
@@ -400,13 +411,12 @@ function sendEmail(mailTo,message,subject)
 {
     try
     {
-      const mail=new mailer();
       mail.sendMail(mailTo,message,subject);
-      logger.log(`Успешно отправил почту `);
+      logger.log('Mail successfully sent');
     }
     catch(err)
     {
-      logger.log(`Ошибка отправки почты ${err}`);
+      logger.log(`Error sending mail ${err}`);
       throw new SyntaxError('Mail error'); //mail problems
     }
     
