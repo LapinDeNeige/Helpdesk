@@ -51,7 +51,7 @@ A lightweight, feature-rich helpdesk system designed to streamline ticket manage
 Clone the repository:
 
 ```
-git clone -b deprecated https://github.com/LapinDeNeige/Helpdesk.git
+git clone https://github.com/LapinDeNeige/Helpdesk.git
 ```
 Install dependencies:
 ```bash
@@ -74,7 +74,7 @@ node app.js
 # Docker installation
 Clone the repository:
 ```
-git clone -b deprecated https://github.com/LapinDeNeige/Helpdesk.git
+git clone https://github.com/LapinDeNeige/Helpdesk.git
 ```
 Run
 ```bash
