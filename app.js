@@ -237,7 +237,7 @@ app.get('/tickets', (request, response) => {
   app.get('/stat',isAuthenticated,(request,response)=>{
     db_wrapper.getStatistic().then((result)=>{
       if(!result)
-        response.json({'status':'GetStatError','result':'Ошибка получения статистики'});
+        response.json({'status':'GetStatError','result':'Error getting stat'});
       else
         response.json({'status':'OK','result':result});
     });
@@ -247,7 +247,7 @@ app.get('/tickets', (request, response) => {
     let problem=request.query.problem;
     db_wrapper.getStatisticProblem(problem).then((result)=>{
       if(!result)
-        response.json({'status':'GetStatProblemError','result':'Ошибка получения статистики по проблеме'});
+        response.json({'status':'GetStatProblemError','result':'Error getting problem stat'});
       else
         response.json({'status':'OK','result':result});
     })    
@@ -275,11 +275,7 @@ app.get('/tickets', (request, response) => {
     response.render('not_found');
   });
   
-  /*
-  app.listen(host.port,host.ip,host.timeout, () => { 
-    console.log(`Starting server on ${host.ip}:${host.port}`); 
-  });
-  */
+
   //
   app.listen(process.env.PORT,process.env.HOST,()=>{
     console.log(`Listening on ${process.env.HOST}:${process.env.PORT}`);

@@ -24,7 +24,11 @@ async function getData(param)
 
     stopLoading();
     if(response.data.status=='DBError')
-        alert('Database error');
+    {
+        cleanTickets();
+        showError();
+        console.error('Database error');
+    }
     else if(response.data.status=='OK')
     {
       
@@ -53,14 +57,16 @@ async function getData(param)
             
     else
     {
-        alert(`Data status  ${response.data.status}`);
-        console.log(`Data get status error ${response.data.status}`);
+        cleanTickets();
+        showError();
+        console.error(`Data get status error ${response.data.status}`);
     }
     
   }
   catch(err)
   {
-    alert(`Error with internet ${err}`);
+    cleanTickets();
+    showError();
     console.log(`Error with internet ${err}`);
   }
 }
@@ -172,7 +178,7 @@ async function delNotification(id)
     }
     else
     {
-      alert('Notification removing error');
+      console.error('Notification removing error');
     }
     
   }
@@ -262,7 +268,7 @@ async function showNotifications()
   {
     const response=await axios.get('/getNotify');
     if(response.data.status=='ReadAllNotifyError')
-      alert('Error reading notifications');
+      console.error('Error reading notifications');
     else if(response.data.status == 'OK')
     {
       const notifyMessageCnt=response.data.message.length;
@@ -278,14 +284,13 @@ async function showNotifications()
     }
     else
     {
-      alert('Error loading notifications');
+      console.error('Error loading notifications');
     }
     
   }
   catch(err)
   { 
-    alert('Error loading notifications');
-    console.log(err);
+    console.log(`Error loading notifications ${err}`);
   }
 }
 
@@ -304,7 +309,9 @@ function searchData(data)
     stopLoading();
     if(response.data.status=='SrchError')
     {
-      alert(response.data.message);
+      cleanTickets();
+      showError();
+      console.error(response.data.message);
     }
     else if(response.data.status=='OK')
     {
@@ -326,15 +333,19 @@ function searchData(data)
           createTicketContainer(response.data.message[i]);
       }
     }
-    else
-      alert('Unknown error');
+    else{
+      cleanTickets();
+      showError();
+
+      console.error('Error searching: Unknown error');
+    }
 
     
   }).catch(err=>{
     //unblockTickets();
-
-    alert('Error with internet');
-    console.log(err);
+    cleanTickets();
+    showError();
+    console.log(`Error with internet ${err}`);
     
   });
   
@@ -371,14 +382,12 @@ async function readNotification(data)
     }
     else
     {
-      alert('Error read notification');
-      console.error(notifications.data.status);
+      console.error(`Error read notification ${notifications.data.status}`);
     }
   }
   catch(err)
   {
-    alert('Error reading notifications');
-    console.error(err);
+    console.error(`Error reading notifications ${err}`);
   }
 
 }
@@ -456,7 +465,6 @@ async function getStatistic()
   catch(err)
   {
       console.error('Statistic error',err);
-      alert(err)
   }
 }
 
@@ -479,12 +487,11 @@ async function getProblemsStatistic()
       
     }
     else
-      alert(response.data.result);
+      console.error(response.data.result);
   }
   catch(err)
   {
     console.error('Problem statisctis error ',err);
-    alert(err);
   }
 }
 function scrollToTicket(ticketId)
@@ -523,8 +530,7 @@ function updateTicketStatus(data)
 
   }).catch(err=>
     {
-    alert('Error updating status');
-    console.log(err);
+    console.log(`Error updating status ${err}`);
   });      
 }
 
@@ -556,8 +562,10 @@ function deleteTickets()
       let ticketIds = getCheckedTickets();
       let ticketsContainer = getTicketsContainer();
       let ticketsCount = ticketsContainer.length;
+      /*
       if(ticketIds.length == ticketsCount)
         alert();
+      */
       ///
       startLoading();
       cleanTickets();
@@ -572,7 +580,6 @@ function deleteTickets()
         let result = setTimeout(removeTicket,time,curLabel);
         if(!result)
         {
-          alert('Error removing ticket');
           console.log('Error removing ticket');
         }
             
@@ -606,7 +613,6 @@ async function removeTicket(ticketId)
   catch(err)
   {
     console.log(`Error remove ticket ${err}`);
-    alert(`Error remove ticket ${err}`); 
   }
 }
 
