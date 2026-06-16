@@ -244,7 +244,7 @@ app.get('/tickets', (request, response) => {
   app.get('/stat',isAuthenticated,(request,response)=>{
     db_wrapper.getStatistic().then((result)=>{
       if(!result)
-        response.json({'status':'GetStatError','result':'Ошибка получения статистики'});
+        response.json({'status':'GetStatError','result':'Error getting status'});
       else
         response.json({'status':'OK','result':result});
     });
@@ -254,7 +254,7 @@ app.get('/tickets', (request, response) => {
     let problem=request.query.problem;
     db_wrapper.getStatisticProblem(problem).then((result)=>{
       if(!result)
-        response.json({'status':'GetStatProblemError','result':'Ошибка получения статистики по проблеме'});
+        response.json({'status':'GetStatProblemError','result':'Error getting problem status'});
       else
         response.json({'status':'OK','result':result});
     })    
@@ -266,7 +266,7 @@ app.get('/tickets', (request, response) => {
     
     db_wrapper.uploadFile({'ticketId':ticketId}).then((result)=>{
         if(!result)
-          response.json({'status':'GetUploadError','result':'Ошибка получения файла'});
+          response.json({'status':'GetUploadError','result':'Error getting file'});
         else
           response.json({'status':'OK','result':result})
     });
@@ -276,7 +276,7 @@ app.get('/tickets', (request, response) => {
     
     db_wrapper.getUploadFile({'ticketId':ticketId}).then((result)=>{
         if(!result)
-          response.json({'status':'GetUploadError','result':'Ошибка получения файла'});
+          response.json({'status':'GetUploadError','result':'Error getting file'});
         else
           response.json({'status':'OK','result':result[0]})
     });

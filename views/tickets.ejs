@@ -64,7 +64,7 @@
           <!--------------------->
           <main class="tickets" id="tickets-id">
             <%if(status=='Error') {%>
-              <script>alert('Error loading tickets');</script>
+              <script>cleanTickets();showError();</script>
             <%}%>
             <%if(status=='OK') {%>
               <%if(data.length==0) {%>

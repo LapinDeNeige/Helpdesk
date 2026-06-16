@@ -786,6 +786,13 @@ input[type="checkbox"]
   color:var(--accent);
   margin-top:85px;
 }
+.error-page
+{
+    position: absolute;
+    left: 51%;
+    top:45%;
+    padding: 2px;
+}
 @keyframes load
 {
   from {
@@ -886,7 +893,6 @@ input[type="checkbox"]
     left: 265px;
     top:-71px;
   }
-  {
   
   
 }

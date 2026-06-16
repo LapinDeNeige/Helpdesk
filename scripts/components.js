@@ -257,3 +257,42 @@ function getCheckedTickets()
   return checkedTickets;
 }
 
+////////////////   
+function createError()
+{
+  let errorPage = document.createElement('div');
+  errorPage.className='error-page';
+
+  let img = document.createElement('img');
+  img.src='../sources/error-icon.svg';
+  img.style.marginLeft='40px';
+  img.width='90';
+  img.height='90';
+
+  let text=document.createElement('p');
+  text.style.color='var(--accent)';
+
+  text.innerText='Some error. Unable to load page';
+
+
+  
+  
+  errorPage.appendChild(img);
+  errorPage.appendChild(text);
+
+  let parentElement=document.getElementById('tickets-id');
+  parentElement.appendChild(errorPage);  
+}
+function showError()
+{
+  const errorPage = document.getElementById('error-page');
+  errorPage==null?createError():errorPage.style.display='block';
+}
+/*
+function hideError()
+{
+  if(errorPage!=null)
+    errorPage.style.display='none';
+}
+*/
+////////////////
