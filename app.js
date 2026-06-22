@@ -266,7 +266,18 @@ app.get('/tickets', (request, response) => {
     });
   });
 
+  ///
+  app.get('/log',isAuthenticated,(request,response)=>{
 
+      logger.readLog().then((result)=>{
+        response.json({'result':'OK','data':result});
+      }).catch((err)=>{
+        response.json({'result':'Err','message':err})
+      })
+    
+
+  });
+  ///
   app.get('/version',(request,response)=>{
    response.json({'currentVersion':jsonFile.version}); 
   });

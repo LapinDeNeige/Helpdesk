@@ -21,6 +21,8 @@
 
     <script src="../scripts/components.js"></script>
     <script src="../scripts/auth.js"></script>
+
+    <script src="../scripts/log.js"></script>
   </head>
   <body>
       <div class="content content-moderator" id="content-id">
@@ -148,8 +150,16 @@
             <button id="completed" onclick="updateTickets({type:'status','status':statusCompleted})">Completed</button>
             <button id="pending" onclick="updateTickets({type:'status','status':statusPending})">Pending</button>
             <button id="in-proceed" onclick="updateTickets({type:'status','status':statusProcess})">In progress</button>
-            <button id="back" onclick="location.href='../index'">Back to menu</button>
+
+            <button id="log" style="margin-top:35px" onclick="getLog()">View log</button> 
+
+            <button id="back" style="margin-top: 45px;" onclick="location.href='../index'">Back to menu</button>
           </aside>
+
+          <div id="log-window" class="content log-window"> 
+            <div class="close-btn close-btn-log" onclick="closeLogWindow()"></div>
+            <div class="header header-logs"><h1>Logs</h1> </div>
+          </div>
           
           <footer></footer>
         </div>
