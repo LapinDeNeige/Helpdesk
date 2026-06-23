@@ -40,7 +40,7 @@ A lightweight, feature-rich helpdesk system designed to streamline ticket manage
 * ``` POST /delNotify ``` - Delete notifications   
 * ``` GET /isAuth ``` - Get user's auth status (if user authenticated)
 * ``` GET /tickets ``` - Get tickets page 
-* ``` GET /log ``` - Get logs messages 
+* ``` GET /log ``` - Get logs messages (if user authenticated)
 * ``` GET /support ``` - Get support form page 	
 * ``` GET /registration ``` - Get registration page
 * ``` POST /registration ``` - Sign up new user
