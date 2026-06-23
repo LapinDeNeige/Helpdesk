@@ -44,7 +44,9 @@ A lightweight, feature-rich helpdesk system designed to streamline ticket manage
 * ``` POST /registration ``` - Sign up new user
 * ``` GET /login ``` - Get login page
 * ``` POST /login ``` - Sign in user
-* ``` POST /logout``` - Log out user 
+* ``` POST /logout``` - Log out user
+* ``` GET /log ``` - Get logs messages (if user authenticated)
+ 
 # Installation
 Clone the repository:
 
