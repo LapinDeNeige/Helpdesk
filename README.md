@@ -58,7 +58,8 @@ Install dependencies:
 npm install
 ```
 Configure variables for server's IP and PORT   in ```.env``` file.
-<br>
+
+
 Configure variables for database  in ```.env.db``` file.
 
 
