@@ -17,8 +17,10 @@ const localAuth = require('passport-local').Strategy;
 const session = require('express-session');
 
 const upload=require('upload');
-///
+
 const logFile=require('./config/config_log/config_log.js');
+///
+const mailer = require('mail');
 ///
 require('dotenv').config();
 
@@ -32,8 +34,9 @@ const db_wrapper=new wrapper();
 const jsonData=new jData();
 
 const uploadConfig=new upload();
-//const mail=new mailer();
-
+///
+const mail=new mailer();
+///
 app.use(express.json());
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname));
@@ -300,7 +303,6 @@ app.get('/tickets', (request, response) => {
    response.json({'currentVersion':jsonFile.version}); 
   });
 
-  ///
   app.get('/log',isAuthenticated,(request,response)=>{
 
       logger.readLog().then((result)=>{
@@ -311,7 +313,7 @@ app.get('/tickets', (request, response) => {
     
 
   });
-  ///
+  
 
   app.get('*',(request,response)=>{
     response.render('not_found');
@@ -396,6 +398,9 @@ app.get('/tickets', (request, response) => {
             db_wrapper.uploadFile({'path':fileUrl});
           }
           response.render('result',{'status':'OK','message':'Your application has successfully been sent'});
+          //
+          sendEmail(email,"Dear user,your message has been successfully sent",'Helpdesk');
+          //
         }
         else
           response.render('result',{'status':'DBError','message':'Some error occured'});
@@ -406,7 +411,7 @@ app.get('/tickets', (request, response) => {
   } ); 
 
 
-/*
+
 function sendEmail(mailTo,message,subject)
 {
     try
@@ -417,9 +422,9 @@ function sendEmail(mailTo,message,subject)
     catch(err)
     {
       logger.log(`Error sending mail ${err}`);
-      throw new SyntaxError('Mail error'); //mail problems
+      //throw new SyntaxError('Mail error'); //mail problems
     }
     
 }
-*/
+
 ///////////////////////////////////////////////////
