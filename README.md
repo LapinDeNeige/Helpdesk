@@ -58,14 +58,19 @@ Install dependencies:
 npm install
 ```
 
-<br>
+
 Configure variables for server's IP and PORT   in ```.env``` file.
-<br>
+
+
 Configure variables for database in ```.env.db``` file.
-<br>
+
+
 Configure variables for email in ```.env.email``` file.
 
+
 To migrate database Don't forget to pass your database name , login and password to knex.js file
+
+
 ```bash
 npx knex migrate:latest
 ```
