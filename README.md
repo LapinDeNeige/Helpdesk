@@ -3,9 +3,9 @@ A lightweight, feature-rich helpdesk system designed to streamline ticket manage
 
 # Features
 
-* ~~Mailing Client After Sending Ticket~~ 
-* ~~Automatically sends email notifications to clients once their ticket is submitted, ensuring prompt communication and acknowledgment.~~ 
-* ~~File Uploading~~ 
+* Mailing Client After Sending Ticket
+* Automatically sends email notifications to clients once their ticket is submitted, ensuring prompt communication and acknowledgment.
+* File Uploading
 * Notifications
 * Keep users updated with real-time notifications for ticket updates, comments, and status changes.
 * Admin Panel
