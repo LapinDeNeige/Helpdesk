@@ -84,7 +84,6 @@
                 -->
                 <%if(errors.includes('problem')) {%>
                 <select class="dropdown input-error" id="problems" name="problem">
-                  <option value="other">CHOOSE AN ISSUE FROM LIST</option>
                   <option value="other">CHOOSE YOUR ISSUE FROM LIST</option>
                   <option value="not-access-folder" name="not-access-folder">Problem with access to shared folder</option>
                   <option value="not-access-network" name="not-access-network">Issue with internet</option>
@@ -95,7 +94,7 @@
                   <option value="other-problem" name="other-problem">Other</option>
                   
                 </select>
-                <label id="errorProblem" class="error-text">Выберите проблему</label>
+                <label id="errorProblem" class="error-text">Choose your issue</label>
                   <%} else {%>
                   <select class="dropdown" id="problems" name="problem">
                     <option value="other">CHOOSE AN ISSUE FROM LIST</option>

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "private":true,
-  "main": "db-wrapper.js",
+  "main": "auth.js",
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,9 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "db": "file:../db",
-    "json-data": "file:../json-data",
-    "date":"file:../date",
-    "log": "file:../log"
+    "db": "file:../db-wrapper"
   }
 }

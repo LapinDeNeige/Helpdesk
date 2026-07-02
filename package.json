@@ -33,6 +33,7 @@
     "upload": "file:lib/upload",
     "validation": "file:lib/validation",
     "mail": "file:lib/email",
+    "auth":"file:lib/auth",
     "validator": "^13.12.0"
   }
 }
