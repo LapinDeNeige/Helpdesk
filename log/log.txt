@@ -1,0 +1,552 @@
+[APP] [23.06.2026 | 22:51:49] Connecting to database localhost:3306
+[APP] [23.06.2026 | 22:52:04] Yes sent new application Cartrigge change number 8
+[APP] [23.06.2026 | 22:52:04] Mail successfully sent
+[APP] [23.06.2026 | 22:52:05] Culdn't sent email Error: Invalid login: 535 5.7.0 (#AUTH005) Too many bad auth attempts.
+[APP] [23.06.2026 | 22:52:08] Notification read 
+[APP] [23.06.2026 | 22:52:45] User auth successfully
+[APP] [23.06.2026 | 22:53:37] Connecting to database localhost:3306
+[APP] [23.06.2026 | 22:53:45] User auth successfully
+[APP] [23.06.2026 | 22:53:51] Ticket removed successfully
+[APP] [23.06.2026 | 22:53:52] Ticket removed successfully
+[APP] [1.07.2026 | 23:07:04] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:07:58] User auth successfully
+[APP] [1.07.2026 | 23:08:00] User logout
+[APP] [1.07.2026 | 23:08:24] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:08:29] User auth successfully
+[APP] [1.07.2026 | 23:010:07] User logout
+[APP] [1.07.2026 | 23:010:11] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:010:50] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:11:57] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:12:24] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:12:39] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:14:39] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:17:00] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:17:52] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:18:06] User auth successfully
+[APP] [1.07.2026 | 23:24:44] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:25:39] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:25:48] User auth successfully
+[APP] [1.07.2026 | 23:26:22] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:27:47] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:29:34] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:31:21] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:31:57] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:34:11] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:34:52] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:35:34] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:36:57] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:37:16] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:37:53] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:37:59] User auth successfully
+[APP] [1.07.2026 | 23:41:010] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:41:21] User registered successfully
+[APP] [1.07.2026 | 23:42:24] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:43:12] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:43:57] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:44:04] User auth successfully
+[APP] [1.07.2026 | 23:45:16] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:45:20] User auth successfully
+[APP] [1.07.2026 | 23:52:16] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:53:25] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:54:19] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:56:32] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:56:54] Connecting to database localhost:3306
+[APP] [1.07.2026 | 23:57:03] User auth successfully
+[APP] [1.07.2026 | 23:57:25] One sent new application Peoblems with internet number 9
+[APP] [1.07.2026 | 23:57:25] Mail successfully sent
+[APP] [1.07.2026 | 23:57:25] Couldn't sent email Error: getaddrinfo ENOTFOUND SMTP.YOURDHOSY.COM
+[APP] [1.07.2026 | 23:57:29] Notification read 
+[APP] [2.07.2026 | 00:01:14] Connecting to database localhost:3306
+[APP] [2.07.2026 | 00:01:35] Connecting to database localhost:3306
+[APP] [2.07.2026 | 00:01:41] User auth successfully
+[APP] [2.07.2026 | 00:05:48] Connecting to database localhost:3306
+[APP] [2.07.2026 | 00:05:57] User auth successfully
+[APP] [2.07.2026 | 00:06:35] Connecting to database localhost:3306
+[APP] [2.07.2026 | 00:06:41] User auth successfully
+[APP] [2.07.2026 | 08:39:25] Connecting to database localhost:3306
+[APP] [2.07.2026 | 08:39:36] User auth successfully
+[APP] [2.07.2026 | 08:40:56] Connecting to database localhost:3306
+[APP] [2.07.2026 | 08:41:05] User auth successfully
+[APP] [2.07.2026 | 08:42:43] Connecting to database localhost:3306
+[APP] [2.07.2026 | 08:43:15] Connecting to database localhost:3306
+[APP] [2.07.2026 | 08:43:27] Connecting to database localhost:3306
+[APP] [2.07.2026 | 08:43:35] User auth successfully
+[APP] [2.07.2026 | 08:43:53] Error sending application
+[APP] [2.07.2026 | 08:44:12] Error sending application
+[APP] [2.07.2026 | 08:44:28] One sent new application Peoblems with internet number 10
+[APP] [2.07.2026 | 08:44:28] Mail successfully sent
+[APP] [2.07.2026 | 08:44:28] Couldn't sent email Error: getaddrinfo EAI_AGAIN SMTP.YOURDHOSY.COM
+[APP] [2.07.2026 | 08:44:38] Notification read 
+[APP] [2.07.2026 | 08:47:37] Connecting to database localhost:3306
+[APP] [2.07.2026 | 08:47:45] User auth successfully
+[APP] [2.07.2026 | 08:49:08] Yes sent new application Cartrigge change number 11
+[APP] [2.07.2026 | 08:49:08] Mail successfully sent
+[APP] [2.07.2026 | 08:49:08] Couldn't sent email Error: getaddrinfo EAI_AGAIN SMTP.YOURDHOSY.COM
+[APP] [2.07.2026 | 08:49:37] Connecting to database localhost:3306
+[APP] [2.07.2026 | 08:51:20] Connecting to database localhost:3306
+[APP] [2.07.2026 | 08:51:26] User auth successfully
+[APP] [2.07.2026 | 08:51:45] Notification read 
+[APP] [2.07.2026 | 09:07:46] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:09:28] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:11:25] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:15:35] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:17:04] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:17:33] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:17:45] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:18:09] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:18:46] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:19:01] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:23:23] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:23:52] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:24:17] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:24:33] User auth successfully
+[APP] [2.07.2026 | 09:25:41] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:27:20] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:27:39] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:28:31] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:30:45] User auth successfully
+[APP] [2.07.2026 | 09:31:31] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:31:40] User registered successfully
+[APP] [2.07.2026 | 09:31:50] User auth successfully
+[APP] [2.07.2026 | 09:35:59] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:36:09] Invalid username or passsword
+[APP] [2.07.2026 | 09:36:13] Invalid username or passsword
+[APP] [2.07.2026 | 09:36:21] User auth successfully
+[APP] [2.07.2026 | 09:38:27] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:38:34] Invalid username or passsword
+[APP] [2.07.2026 | 09:38:38] User auth successfully
+[APP] [2.07.2026 | 09:38:46] User registered successfully
+[APP] [2.07.2026 | 09:41:50] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:42:04] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:42:48] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:43:14] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:44:17] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:44:23] Invalid username or passsword
+[APP] [2.07.2026 | 09:44:26] User auth successfully
+[APP] [2.07.2026 | 09:44:44] One sent new application Cartrigge change number 12
+[APP] [2.07.2026 | 09:44:44] Mail successfully sent
+[APP] [2.07.2026 | 09:44:45] Couldn't sent email Error: getaddrinfo ENOTFOUND SMTP.YOURDHOSY.COM
+[APP] [2.07.2026 | 09:44:48] Notification read 
+[APP] [2.07.2026 | 09:52:28] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:52:51] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:53:18] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:55:17] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:55:23] User auth successfully
+[APP] [2.07.2026 | 09:57:25] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:57:33] Invalid username or passsword
+[APP] [2.07.2026 | 09:57:37] User auth successfully
+[APP] [2.07.2026 | 09:57:48] One sent new application Problems with phone number 13
+[APP] [2.07.2026 | 09:57:48] Mail successfully sent
+[APP] [2.07.2026 | 09:58:39] Connecting to database localhost:3306
+[APP] [2.07.2026 | 09:58:45] User auth successfully
+[APP] [2.07.2026 | 010:00:03] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:00:08] Invalid username or passsword
+[APP] [2.07.2026 | 010:00:12] User auth successfully
+[APP] [2.07.2026 | 010:00:47] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:00:51] User auth successfully
+[APP] [2.07.2026 | 010:01:12] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:01:17] User auth successfully
+[APP] [2.07.2026 | 010:01:30] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:01:35] User auth successfully
+[APP] [2.07.2026 | 010:01:38] Error reading notification SqlError: (conn:222, no: 1064, SQLState: 42000) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '[object Object]' at line 1
+sql: UPDATE tickets_notify SET notify_status=0 WHERE TicketsId=[object Object]; - parameters:[]
+[APP] [2.07.2026 | 010:02:33] Error reading notification SqlError: (conn:216, no: 1064, SQLState: 42000) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '[object Object]' at line 1
+sql: UPDATE tickets_notify SET notify_status=0 WHERE TicketsId=[object Object]; - parameters:[]
+[APP] [2.07.2026 | 010:03:15] Error reading notification SqlError: (conn:217, no: 1064, SQLState: 42000) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '[object Object]' at line 1
+sql: UPDATE tickets_notify SET notify_status=0 WHERE TicketsId=[object Object]; - parameters:[]
+[APP] [2.07.2026 | 010:03:18] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:03:26] Invalid username or passsword
+[APP] [2.07.2026 | 010:03:31] User auth successfully
+[APP] [2.07.2026 | 010:04:34] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:04:39] Invalid username or passsword
+[APP] [2.07.2026 | 010:04:43] User auth successfully
+[APP] [2.07.2026 | 010:04:46] Error reading notification SqlError: (conn:244, no: 1064, SQLState: 42000) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '[object Object]' at line 1
+sql: UPDATE tickets_notify SET notify_status=0 WHERE TicketsId=[object Object]; - parameters:[]
+[APP] [2.07.2026 | 010:05:22] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:05:27] User auth successfully
+[APP] [2.07.2026 | 010:05:29] Notification read 
+[APP] [2.07.2026 | 010:06:22] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:06:27] User auth successfully
+[APP] [2.07.2026 | 010:06:41] One sent new application Cartrigge change number 14
+[APP] [2.07.2026 | 010:06:41] Mail successfully sent
+[APP] [2.07.2026 | 010:06:44] Notification read 
+[APP] [2.07.2026 | 010:07:21] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:07:26] User auth successfully
+[APP] [2.07.2026 | 010:07:41] One sent new application Problems with printer number 15
+[APP] [2.07.2026 | 010:07:41] Mail successfully sent
+[APP] [2.07.2026 | 010:07:53] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:07:57] User auth successfully
+[APP] [2.07.2026 | 010:08:12] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:08:19] User auth successfully
+[APP] [2.07.2026 | 010:08:21] Notification read 
+[APP] [2.07.2026 | 010:09:35] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:09:43] User auth successfully
+[APP] [2.07.2026 | 010:010:41] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:010:47] User auth successfully
+[APP] [2.07.2026 | 010:11:02] One sent new application Cartrigge change number 16
+[APP] [2.07.2026 | 010:11:02] Mail successfully sent
+[APP] [2.07.2026 | 010:11:010] Notification read 
+[APP] [2.07.2026 | 010:13:50] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:14:16] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:14:47] One sent new application Other number 17
+[APP] [2.07.2026 | 010:14:47] Mail successfully sent
+[APP] [2.07.2026 | 010:14:47] Files uploaded successfully
+[APP] [2.07.2026 | 010:15:01] Uploaded files received successfully
+[APP] [2.07.2026 | 010:15:01] Notification read 
+[APP] [2.07.2026 | 010:15:46] Couldn't sent email Error: queryA ETIMEOUT SMTP.YOURDHOSY.COM
+[APP] [2.07.2026 | 010:27:51] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:28:06] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:28:38] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:28:47] User auth successfully
+[APP] [2.07.2026 | 010:28:57] Ticket removed successfully
+[APP] [2.07.2026 | 010:28:58] Ticket removed successfully
+[APP] [2.07.2026 | 010:28:59] Ticket removed successfully
+[APP] [2.07.2026 | 010:29:03] Files uploaded successfully
+[APP] [2.07.2026 | 010:30:14] One sent new application Other number 18
+[APP] [2.07.2026 | 010:30:14] Mail successfully sent
+[APP] [2.07.2026 | 010:30:14] Files uploaded successfully
+[APP] [2.07.2026 | 010:30:19] Notification read 
+[APP] [2.07.2026 | 010:30:19] Files uploaded successfully
+[APP] [2.07.2026 | 010:30:46] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:37:36] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:38:04] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:38:49] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:38:55] Invalid username or passsword
+[APP] [2.07.2026 | 010:39:04] Data found successfully
+[APP] [2.07.2026 | 010:39:06] Data found successfully
+[APP] [2.07.2026 | 010:39:14] Data found successfully
+[APP] [2.07.2026 | 010:39:16] Files uploaded successfully
+[APP] [2.07.2026 | 010:41:45] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:42:04] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:42:26] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:42:36] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:43:43] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:44:00] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:44:16] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:44:22] Data found successfully
+[APP] [2.07.2026 | 010:45:38] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:45:54] One sent new application Problems with phone number 19
+[APP] [2.07.2026 | 010:45:54] Mail successfully sent
+[APP] [2.07.2026 | 010:45:57] Notification read 
+[APP] [2.07.2026 | 010:46:54] Couldn't sent email Error: queryA ETIMEOUT SMTP.YOURDHOSY.COM
+[APP] [2.07.2026 | 010:47:07] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:47:17] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:54:22] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:54:26] Data found successfully
+[APP] [2.07.2026 | 010:54:40] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:54:43] Data found successfully
+[APP] [2.07.2026 | 010:55:43] Connecting to database localhost:3306
+[APP] [2.07.2026 | 010:55:55] One sent new application Problems with phone number 20
+[APP] [2.07.2026 | 010:55:55] Mail successfully sent
+[APP] [2.07.2026 | 010:56:00] Notification read 
+[APP] [2.07.2026 | 010:57:03] Couldn't sent email Error: queryA ETIMEOUT SMTP.YOURDHOSY.COM
+[APP] [2.07.2026 | 010:59:50] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:00:07] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:00:17] Invalid username or passsword
+[APP] [2.07.2026 | 11:00:22] User auth successfully
+[APP] [2.07.2026 | 11:00:26] Data found successfully
+[APP] [2.07.2026 | 11:01:38] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:01:48] User auth successfully
+[APP] [2.07.2026 | 11:02:01] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:02:06] User auth successfully
+[APP] [2.07.2026 | 11:02:14] Ticket removed successfully
+[APP] [2.07.2026 | 11:02:15] Ticket removed successfully
+[APP] [2.07.2026 | 11:07:35] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:07:43] Invalid username or passsword
+[APP] [2.07.2026 | 11:07:46] User auth successfully
+[APP] [2.07.2026 | 11:07:51] Ticket removed successfully
+[APP] [2.07.2026 | 11:07:52] Ticket removed successfully
+[APP] [2.07.2026 | 11:08:00] Ticket removed successfully
+[APP] [2.07.2026 | 11:08:01] Ticket removed successfully
+[APP] [2.07.2026 | 11:15:00] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:15:08] Invalid username or passsword
+[APP] [2.07.2026 | 11:15:11] User auth successfully
+[APP] [2.07.2026 | 11:34:46] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:36:03] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:36:16] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:36:37] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:38:42] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:39:03] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:39:20] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:39:43] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:40:32] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:40:38] User auth successfully
+[APP] [2.07.2026 | 11:41:27] Files uploaded successfully
+[APP] [2.07.2026 | 11:41:28] Files uploaded successfully
+[APP] [2.07.2026 | 11:46:51] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:47:00] User auth successfully
+[APP] [2.07.2026 | 11:47:06] Uploaded files received successfully
+[APP] [2.07.2026 | 11:47:50] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:47:56] User auth successfully
+[APP] [2.07.2026 | 11:47:58] Uploaded files received successfully
+[APP] [2.07.2026 | 11:47:58] Uploaded files received successfully
+[APP] [2.07.2026 | 11:48:40] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:48:49] User auth successfully
+[APP] [2.07.2026 | 11:48:51] Uploaded files received successfully
+[APP] [2.07.2026 | 11:49:13] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:49:23] User auth successfully
+[APP] [2.07.2026 | 11:49:24] Uploaded files received successfully
+[APP] [2.07.2026 | 11:50:29] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:50:37] User auth successfully
+[APP] [2.07.2026 | 11:50:38] Uploaded files received successfully
+[APP] [2.07.2026 | 11:50:43] Uploaded files received successfully
+[APP] [2.07.2026 | 11:51:22] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:51:28] User auth successfully
+[APP] [2.07.2026 | 11:51:31] Uploaded files received successfully
+[APP] [2.07.2026 | 11:52:54] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:53:01] User auth successfully
+[APP] [2.07.2026 | 11:53:02] Uploaded files received successfully
+[APP] [2.07.2026 | 11:53:21] Connecting to database localhost:3306
+[APP] [2.07.2026 | 11:53:52] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 11:53:54] Error getting data SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 11:53:54] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 11:53:57] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 11:53:58] Error getting data SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 11:53:59] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 11:54:01] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 11:54:01] Error getting data SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 11:54:03] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 11:54:03] Error getting notification SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 11:54:05] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 11:54:05] Error getting notification SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 11:54:07] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 11:54:07] Error getting notification SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 11:54:09] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 11:54:11] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 12:010:29] Connecting to database localhost:3306
+[APP] [2.07.2026 | 12:12:13] Connecting to database localhost:3306
+[APP] [2.07.2026 | 12:12:39] Connecting to database localhost:3306
+[APP] [2.07.2026 | 12:14:09] Connecting to database localhost:3306
+[APP] [2.07.2026 | 12:31:13] Connecting to database localhost:3306
+[APP] [2.07.2026 | 12:32:06] Connecting to database localhost:3306
+[APP] [2.07.2026 | 13:46:00] Connecting to database localhost:3306
+[APP] [2.07.2026 | 13:47:18] Connecting to database localhost:3306
+[APP] [2.07.2026 | 13:47:32] Error sending application
+[APP] [2.07.2026 | 13:48:18] Connecting to database localhost:3306
+[APP] [2.07.2026 | 13:48:34] Error sending application
+[APP] [2.07.2026 | 13:49:02] Connecting to database localhost:3306
+[APP] [2.07.2026 | 13:49:16] Error sending application
+[APP] [2.07.2026 | 13:56:30] Connecting to database localhost:3306
+[APP] [2.07.2026 | 13:57:33] Connecting to database localhost:3306
+[APP] [2.07.2026 | 13:57:47] Error sending application
+[APP] [2.07.2026 | 13:57:47] One sent new application Cartrigge change number 21
+[APP] [2.07.2026 | 13:58:08] Error sending application
+[APP] [2.07.2026 | 13:58:08]     sent new application Other number 22
+[APP] [2.07.2026 | 13:59:03] Connecting to database localhost:3306
+[APP] [2.07.2026 | 13:59:15] Error sending application
+[APP] [2.07.2026 | 13:59:15]     sent new application Other number 23
+[APP] [2.07.2026 | 14:00:27] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:00:40] Error sending application
+[APP] [2.07.2026 | 14:00:40] One sent new application Problems accessing folder number 24
+[APP] [2.07.2026 | 14:00:58] Error sending application
+[APP] [2.07.2026 | 14:00:58] Error sending application
+[APP] [2.07.2026 | 14:00:58]     sent new application Peoblems with internet number 25
+[APP] [2.07.2026 | 14:01:41] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:01:54] User auth successfully
+[APP] [2.07.2026 | 14:01:59] Ticket removed successfully
+[APP] [2.07.2026 | 14:02:00] Ticket removed successfully
+[APP] [2.07.2026 | 14:02:01] Ticket removed successfully
+[APP] [2.07.2026 | 14:02:02] Ticket removed successfully
+[APP] [2.07.2026 | 14:02:03] Ticket removed successfully
+[APP] [2.07.2026 | 14:02:04] Ticket removed successfully
+[APP] [2.07.2026 | 14:02:05] Ticket removed successfully
+[APP] [2.07.2026 | 14:02:06] Ticket removed successfully
+[APP] [2.07.2026 | 14:02:19] Error sending application
+[APP] [2.07.2026 | 14:02:43] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:02:53] Error sending application
+[APP] [2.07.2026 | 14:02:53] Error sending application
+[APP] [2.07.2026 | 14:02:53]     sent new application Other number 26
+[APP] [2.07.2026 | 14:03:17] Notification read 
+[APP] [2.07.2026 | 14:08:19] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:08:51] Error sending application
+[APP] [2.07.2026 | 14:08:51] Error sending application
+[APP] [2.07.2026 | 14:08:51] yes sent new application Other number 27
+[APP] [2.07.2026 | 14:09:41] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:09:50] User auth successfully
+[APP] [2.07.2026 | 14:09:58] Ticket removed successfully
+[APP] [2.07.2026 | 14:09:59] Ticket removed successfully
+[APP] [2.07.2026 | 14:010:17] Error sending application
+[APP] [2.07.2026 | 14:010:17] Error sending application
+[APP] [2.07.2026 | 14:010:32] Error sending application
+[APP] [2.07.2026 | 14:010:32] Error sending application
+[APP] [2.07.2026 | 14:11:06] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:11:16] Error sending application
+[APP] [2.07.2026 | 14:11:16] Error sending application
+[APP] [2.07.2026 | 14:11:41] Error sending application
+[APP] [2.07.2026 | 14:11:41] name sent new application Peoblems with internet number 28
+[APP] [2.07.2026 | 14:11:47] Notification read 
+[APP] [2.07.2026 | 14:18:46] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:19:35] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:19:50] Error sending application
+[APP] [2.07.2026 | 14:20:27] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:20:42] Error sending application
+[APP] [2.07.2026 | 14:20:42] One sent new application Cartrigge change number 29
+[APP] [2.07.2026 | 14:20:50] Notification read 
+[APP] [2.07.2026 | 14:21:19] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:21:31] Error sending application
+[APP] [2.07.2026 | 14:21:31] One sent new application Peoblems with internet number 30
+[APP] [2.07.2026 | 14:21:51] User auth successfully
+[APP] [2.07.2026 | 14:21:56] Notification read 
+[APP] [2.07.2026 | 14:22:08] Error sending application
+[APP] [2.07.2026 | 14:22:08] One sent new application Cartrigge change number 31
+[APP] [2.07.2026 | 14:22:21] Notification read 
+[APP] [2.07.2026 | 14:22:33] Data found successfully
+[APP] [2.07.2026 | 14:22:37] Data found successfully
+[APP] [2.07.2026 | 14:22:39] Data found successfully
+[APP] [2.07.2026 | 14:23:21] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:23:34] Error sending application
+[APP] [2.07.2026 | 14:23:34] One sent new application Peoblems with internet number 32
+[APP] [2.07.2026 | 14:30:28] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:30:38] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:32:58] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:33:14] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:34:43] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:37:21] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:38:05] Notification read 
+[APP] [2.07.2026 | 14:38:46] User auth successfully
+[APP] [2.07.2026 | 14:38:50] Ticket removed successfully
+[APP] [2.07.2026 | 14:38:51] Ticket removed successfully
+[APP] [2.07.2026 | 14:38:52] Ticket removed successfully
+[APP] [2.07.2026 | 14:38:53] Ticket removed successfully
+[APP] [2.07.2026 | 14:38:54] Ticket removed successfully
+[APP] [2.07.2026 | 14:40:29] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:41:02] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:41:16] Error sending application
+[APP] [2.07.2026 | 14:41:16] Error sending application count 
+[APP] [2.07.2026 | 14:41:32] Error sending application
+[APP] [2.07.2026 | 14:41:32] Error sending application count 
+[APP] [2.07.2026 | 14:41:48] Error sending application
+[APP] [2.07.2026 | 14:41:48] Error sending application count 
+[APP] [2.07.2026 | 14:41:58] User auth successfully
+[APP] [2.07.2026 | 14:42:53] Error sending application
+[APP] [2.07.2026 | 14:50:13] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:50:27] Error sending application
+[APP] [2.07.2026 | 14:50:27] One sent new application Problems accessing folder number 33
+[APP] [2.07.2026 | 14:50:31] Notification read 
+[APP] [2.07.2026 | 14:50:40] User auth successfully
+[APP] [2.07.2026 | 14:50:56] Error sending application
+[APP] [2.07.2026 | 14:50:56] Ne sent new application Problems with phone number 34
+[APP] [2.07.2026 | 14:51:04] Ticket removed successfully
+[APP] [2.07.2026 | 14:51:14] Notification read 
+[APP] [2.07.2026 | 14:52:54] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:53:12] User auth successfully
+[APP] [2.07.2026 | 14:53:15] Error sending application
+[APP] [2.07.2026 | 14:53:15] One sent new application Peoblems with internet number 35
+[APP] [2.07.2026 | 14:53:18] Notification read 
+[APP] [2.07.2026 | 14:53:34] Error sending application
+[APP] [2.07.2026 | 14:53:34] Error sending application count 
+[APP] [2.07.2026 | 14:53:40] Ticket removed successfully
+[APP] [2.07.2026 | 14:53:41] Ticket removed successfully
+[APP] [2.07.2026 | 14:55:29] Connecting to database localhost:3306
+[APP] [2.07.2026 | 14:55:38] Connecting to database localhost:3306
+[APP] [2.07.2026 | 15:02:43] Connecting to database localhost:3306
+[APP] [2.07.2026 | 15:03:07] Connecting to database localhost:3306
+[APP] [2.07.2026 | 15:03:13] User auth successfully
+[APP] [2.07.2026 | 15:03:31] Error sending application
+[APP] [2.07.2026 | 15:03:31] One sent new application Problems with phone number 36
+[APP] [2.07.2026 | 15:03:34] Notification read 
+[APP] [2.07.2026 | 15:06:42] Connecting to database localhost:3306
+[APP] [2.07.2026 | 15:06:55] Connecting to database localhost:3306
+[APP] [2.07.2026 | 15:07:00] Invalid username or passsword
+[APP] [2.07.2026 | 15:07:04] User auth successfully
+[APP] [2.07.2026 | 15:13:15] Connecting to database localhost:3306
+[APP] [2.07.2026 | 15:13:44] Connecting to database localhost:3306
+[APP] [2.07.2026 | 15:14:17] Connecting to database localhost:3306
+[APP] [2.07.2026 | 15:14:25] User auth successfully
+[APP] [2.07.2026 | 15:15:09] Connecting to database localhost:3306
+[APP] [2.07.2026 | 15:34:26] Connecting to database db:3306
+[APP] [2.07.2026 | 15:34:29] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 15:34:31] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 15:34:33] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 15:34:35] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 15:34:37] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 15:34:39] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 15:34:41] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 15:34:52] Connecting to database locahost:3306
+[APP] [2.07.2026 | 15:34:57] Error getting data SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 15:35:00] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 15:35:02] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 15:35:04] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 15:35:06] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 15:35:08] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 15:35:010] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 15:35:12] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 15:35:14] Error getting notifications SqlError: (conn:-1, no: 45028, SQLState: HY000) pool failed to retrieve a connection from pool
+    (pool connections: active=0 idle=0 limit=10)
+[APP] [2.07.2026 | 15:35:17] Connecting to database localhost:3306
+[APP] [2.07.2026 | 17:11:54] Connecting to database localhost:3306
+[APP] [2.07.2026 | 17:14:13] Connecting to database localhost:3306
+[APP] [2.07.2026 | 17:14:36] Error sending application
+[APP] [2.07.2026 | 17:16:12] Connecting to database localhost:3306
+[APP] [2.07.2026 | 17:16:35] Error sending application
+[APP] [2.07.2026 | 17:16:35] One sent new application Problems with phone number 37
+[APP] [2.07.2026 | 17:16:53] Error sending application
+[APP] [2.07.2026 | 17:16:53] Yes sent new application Other number 38
+[APP] [2.07.2026 | 17:18:49] Connecting to database localhost:3306
+[APP] [2.07.2026 | 17:19:03] Error sending application
+[APP] [2.07.2026 | 17:19:25] Connecting to database localhost:3306
+[APP] [2.07.2026 | 17:19:37] Error sending application
+[APP] [2.07.2026 | 17:19:37] One sent new application Problems accessing folder number 39
+[APP] [2.07.2026 | 17:19:51] Error sending application
+[APP] [2.07.2026 | 17:19:51] Two sent new application Other number 40
+[APP] [2.07.2026 | 17:19:54] Uploaded files received successfully
+[APP] [2.07.2026 | 17:19:54] Notification read 
+[APP] [2.07.2026 | 17:20:18] Connecting to database localhost:3306
+[APP] [2.07.2026 | 17:20:40] Error sending application
+[APP] [2.07.2026 | 17:21:15] Connecting to database localhost:3306
+[APP] [2.07.2026 | 17:21:35] Error sending application
+[APP] [2.07.2026 | 17:21:35] Files uploaded successfully
+[APP] [2.07.2026 | 17:21:35] Five sent new application Other number 41
+[APP] [2.07.2026 | 17:21:38] Uploaded files received successfully
+[APP] [2.07.2026 | 17:21:38] Notification read 
+[APP] [2.07.2026 | 17:25:17] Connecting to database localhost:3306
+[APP] [2.07.2026 | 17:25:43] Error sending application
+[APP] [2.07.2026 | 17:25:43] Sixth sent new application Other number 42
+[APP] [2.07.2026 | 17:28:16] Connecting to database localhost:3306
+[APP] [2.07.2026 | 17:28:35] Error sending application
+[APP] [2.07.2026 | 17:28:53] Connecting to database localhost:3306
+[APP] [2.07.2026 | 17:29:16] Error sending application
+[APP] [2.07.2026 | 17:29:16] Eighth sent new application Other number 43
+[APP] [2.07.2026 | 17:29:16] Files uploaded successfully
+[APP] [2.07.2026 | 17:29:25] Uploaded files received successfully
+[APP] [2.07.2026 | 17:29:25] Notification read 
+[APP] [2.07.2026 | 17:29:38] User auth successfully
+[APP] [2.07.2026 | 17:29:42] Ticket removed successfully
+[APP] [2.07.2026 | 17:29:43] Ticket removed successfully
+[APP] [2.07.2026 | 17:29:44] Ticket removed successfully
+[APP] [2.07.2026 | 17:29:45] Ticket removed successfully
+[APP] [2.07.2026 | 17:29:46] Ticket removed successfully
+[APP] [2.07.2026 | 17:29:47] Ticket removed successfully
+[APP] [2.07.2026 | 17:29:48] Ticket removed successfully
+[APP] [2.07.2026 | 17:29:49] Ticket removed successfully
