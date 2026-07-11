@@ -2,6 +2,7 @@ const express = require('express');
 const validation=require('validation');
 const crypto = require('crypto');
 
+<<<<<<< HEAD
 const wrapper= require('db-wrapper');
 const jData=require('json-data');
 
@@ -29,11 +30,28 @@ const db_wrapper=new wrapper();
 const jsonData=new jData();
 
 
+=======
+const Log=require('log');
+
+const passport = require('passport');
+const session = require('express-session');
+
+const bodyParser = require('body-parser');
+//
+require('dotenv').config();
+//
+//const urlEncoded=bodyParser.urlencoded({extended:true});
+
+const app = express();
+const logger=new Log();
+
+>>>>>>> 27ca5d3 (Resctructured)
 app.use(express.json());
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname));
 
 
+<<<<<<< HEAD
 
 
 passport.use(new localAuth(
@@ -70,6 +88,8 @@ async function isAuthenticated(request, response, next) {
   response.redirect('/login');
 }
 
+=======
+>>>>>>> 27ca5d3 (Resctructured)
 app.use(express.urlencoded({ extended: true }));
 
 app.use(session(
@@ -87,6 +107,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
+<<<<<<< HEAD
 app.get('/login', (request, response) => {
 
     db_wrapper.getUserCount().then((result)=>{
@@ -285,6 +306,22 @@ app.get('/tickets', (request, response) => {
   app.get('*',(request,response)=>{
     response.render('not_found');
   });
+=======
+
+
+
+/////
+app.use('/',require('./routes/auth'));
+app.use('/',require('./routes/notify'));
+app.use('/',require('./routes/registration'));
+app.use('/',require('./routes/stat'));
+app.use('/',require('./routes/tickets'));
+app.use('/',require('./routes/log'));
+
+app.get('*',(request,response)=>{
+    response.render('not_found');
+});
+>>>>>>> 27ca5d3 (Resctructured)
   
 
   //
@@ -292,6 +329,7 @@ app.get('/tickets', (request, response) => {
     console.log(`Listening on ${process.env.HOST}:${process.env.PORT}`);
   });
   //
+<<<<<<< HEAD
   app.post('/removeTicket',isAuthenticated,(request,response)=>{
           let retStatus='OK';
 
@@ -375,3 +413,5 @@ app.get('/tickets', (request, response) => {
       
   } ); 
 ///////////////////////////////////////////////////
+=======
+>>>>>>> 27ca5d3 (Resctructured)
