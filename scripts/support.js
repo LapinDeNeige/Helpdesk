@@ -13,7 +13,6 @@
  * function  on load
  */
 
-  //statement.addEventListener('')
   problems.addEventListener('change', function() 
   {
     switch (problems.options[problems.selectedIndex].value)

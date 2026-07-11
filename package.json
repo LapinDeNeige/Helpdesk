@@ -28,10 +28,7 @@
     "passport-local": "^1.0.0",
     "path": "^0.12.7",
     "transliterate": "^1.0.1",
-<<<<<<< HEAD
-=======
     "auth":"file:lib/auth",
->>>>>>> 27ca5d3 (Resctructured)
     "validation": "file:lib/validation",
     "validator": "^13.12.0"
   }

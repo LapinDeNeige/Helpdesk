@@ -37,7 +37,6 @@ function createTickets(data)
     let ticket = document.createElement('button');
       
     ticket.className = 'ticket';
-        //data.notify_status?ticket.className = 'unread-ticket':ticket.className='ticket';
     if(data.notify_status===1)
         ticket.className = 'unread-ticket';
     else

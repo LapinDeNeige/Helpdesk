@@ -2,7 +2,7 @@
 function getLoginWindow()
 {
 	const loginContainer=document.getElementById('login-container-id');//.length;
-	//alert(loginContainer);
+	
 	return loginContainer;	
 }
 function shakeLogin()

@@ -36,11 +36,6 @@ function selectTicket(ticket)
   let curTicket = tickets[0];
   let afterTicket = tickets[1];
 
-  /*
-  curTicket.children[0].children[0].className="label-selected";
-  curTicket.children[0].children[1].className="id-selected";
-  */
-
   curTicket.className="selected-ticket";
   afterTicket.className="selected-after-ticket";
 }
