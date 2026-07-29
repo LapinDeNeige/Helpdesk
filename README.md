@@ -81,6 +81,12 @@ Run the application:
 node app.js
 
 ```
+or
+
+```bash
+npm start
+
+```
 # Docker installation
 Clone the repository:
 ```
